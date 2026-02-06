@@ -50,10 +50,23 @@
                 color: white;
                 }
 
+            .video-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .video-box {
+                flex: 1;
+                min-width: 300px;
+                max-width: 575px;
+            }
+
             video {
-                max-width: 100%;
+                width: 100%;
                 height: auto;
-                margin-bottom: 20px;
                 border-radius: 8px;
             }
 
@@ -125,6 +138,10 @@
                 .commento-header {
                     flex-direction: column;
                 }
+                .video-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
            
         </style>
@@ -151,17 +168,23 @@
         <article>
 			<h1 class="white">Ecco Le Nostre Pubblicità</h1>
                 
-                <span class="badge ita">Video Italiano:</span>
-                <video class="video-ita" controls>
-                    <source src="./Video/Omnia-video-ITA.mp4" type="video/mp4">
-                    <source src="./Video/Omnia-video-ITA.webm" type="video/webm">
-                </video>
+                <div class="video-container">
+                    <div class="video-box">
+                        <span class="badge ita">Video Italiano:</span>
+                        <video class="video-ita" controls>
+                            <source src="./Video/Omnia-video-ITA.mp4" type="video/mp4">
+                            <source src="./Video/Omnia-video-ITA.webm" type="video/webm">
+                        </video>
+                    </div>
 
-                <span class="badge eng">Video Inglese:</span>
-                <video class="video-ing" controls>
-                    <source src="./Video/Omnia-video-ENG.mp4" type="video/mp4">
-                    <source src="./Video/Omnia-video-ENG.webm" type="video/webm">
-                </video>
+                    <div class="video-box">
+                        <span class="badge eng">Video Inglese:</span>
+                        <video class="video-ing" controls>
+                            <source src="./Video/Omnia-video-ENG.mp4" type="video/mp4">
+                            <source src="./Video/Omnia-video-ENG.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
                
                 <section id="commenti">
                     <h2 class="white" style="text-align:left;">Commenti degli utenti</h2>
@@ -207,4 +230,4 @@
             <p style="text-align:right; font-size: 14px; margin: 0;"> Copyright Omnia Assist 2026&copy;</p>
         </footer>
     </body>
-</html>
+</html> 
