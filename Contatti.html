@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" style="height: 100%;">
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -16,32 +16,41 @@
 				font-family: 'Trebuchet MS', sans-serif;
 				margin:0;
 				padding:0;
+				display: flex;
+				flex-direction: column;
+				min-height: 100%;
 			}
 			header{
 				background-color:#6F2DA8;
 				text-align:center;
 				padding-bottom:10px;
-			}
+				}
 			nav{
 				background-color:#6F2DA8;
 				text-align:center;
 				padding-bottom: 10px;
-			}
-			a:link{
-				color:white;
-			}
-			a:visited{
-				color:white;
-			}
-			a:hover{
-				color:black;
-			}
-			a{text-decoration:none;}
-			a:link{font-size:1.75em}
+				padding-top: 10px;
+				}
+				nav a{
+					color:#6F2DA8;
+					background-color: white;
+					padding: 8px 20px;
+					border-radius: 20px;
+					border: 2px solid white;
+					font-weight: bold;
+					font-size: 1.1em;
+					text-decoration: none;
+					display: inline-block;
+				}
+				nav a:hover{
+					background-color: #6F2DA8;
+					color: white;
+				}
 			article{
 				background-color:white;
 				padding: 20px;
 				text-align: center;
+				flex: 1;
 			}
 			footer{
 				background-color:#6F2DA8;
@@ -63,6 +72,7 @@
 			.member img {
 				border-radius: 50%;
 				object-fit: cover;
+				border:3px solid #6F2DA8;
 			}
 			
 			p{
@@ -80,13 +90,19 @@
 				color: #6F2DA8;
 			}
 
-			.smallLink{font-size:0.65em;}
+			.smallLink{font-size:1em;}
+			.smallLink a{
+				font-size: 1.25em;
+				background: none;
+				border: none;
+				color: white;
+				padding: 0;
+			}
 
-			@media (max-width: 768px) {
+			@media (max-width: 900px) {
 				nav a {
 					display: block;
-					font-size: 1.2em;
-					margin: 10px 0;
+					margin: 10px 20px;
 				}
 				.team {
 					flex-direction: column;
@@ -105,7 +121,7 @@
 	<body>
 	
 		<header>
-			<img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300">
+			<a href="index.html" style="background:none; border:none; padding:0;"><img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300"></a>
 		</header>
 		
 		<nav>
@@ -153,7 +169,7 @@
 		<footer>
 			Made by: Omnia Assist Corp.<br/>
 			(Barbolini Matteo, Pignatti Marco, Di Donna Gabriel, Kinaoui Imran)<br/>
-			<span class="smallLink"><a href="Contatti.html" style="color:white; text-decoration:none;">Contatti Utili</a></span>
+			<span class="smallLink"><a href="Contatti.html">Contatti utili</a></span>
 			<p style="text-align:right; font-size: 14px;"> Copyrigt Omnia Assist 2026&copy;</p>
 		</footer>
 	</body>

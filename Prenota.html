@@ -26,25 +26,30 @@
 				background-color:#6F2DA8;
 				text-align:center;
 				padding-bottom: 10px;
+				padding-top: 10px;
 				}
-				a:link{
-					color:white;
-					}
-				a:visited{
-					color:white;
-					}
-				a:hover{
-					color:black;
+				nav a{
+					color:#6F2DA8;
+					background-color: white;
+					padding: 8px 20px;
+					border-radius: 20px;
+					border: 2px solid white;
+					font-weight: bold;
+					font-size: 1.1em;
+					text-decoration: none;
+					display: inline-block;
 				}
-				a{text-decoration:none;}
-				a:link{font-size:1.75em}
+				nav a:hover{
+					background-color: #6F2DA8;
+					color: white;
+				}
 			article{
 				background-color:#A5D9Fd;
 				}
 			footer{
 				background-color:#6F2DA8;
 				color:white;
-				padding:20px;
+				padding:30px;
 				}
 			
 			.slide{
@@ -53,12 +58,23 @@
 				text-align:center;
 				width: 100%;
 				border-collapse: collapse;
+				table-layout: fixed;
 				}
+			.slide td {
+				vertical-align: top;
+				padding: 10px;
+			}
 			.slide img {
 				width: 100%;
 				height: 500px;
 				object-fit: cover;
 				max-width: 750px;
+				border-radius:20px;
+				margin-top:20px;
+				border:2px solid #6F2DA8;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			.white{
 				color:white;
@@ -66,43 +82,51 @@
 			.textalignright{
 				text-align:right;
 				}
-			.smallLink{font-size:0.65em;}
+			.smallLink{font-size:1em;}
+			.smallLink a{
+				font-size: 1.25em;
+				background: none;
+				border: none;
+				color: white;
+				padding: 0;
+			}
 			
-			.BigBlackLink{
-				font-size:1.5em;
-				padding: 20px;
-				}
-			.BigBlackLink a:link, .BigBlackLink a:visited{
-				color:#6F2DA8;
-				}
-			.BigBlackLink a:hover{
-				color:Black;
-				}
-
-			@media (max-width: 768px) {
+			@media (max-width: 900px) {
 				.slide, .slide tbody, .slide tr, .slide td {
 					display: block;
 					width: 100%;
-				}
+					}
 				nav a {
 					display: block;
-					font-size: 1.2em;
-					margin: 10px 0;
-				}
+					margin: 10px 20px;
+					}
 				.slide img {
 					height: 300px;
-				}
+					}
 				header img {
 					width: 80%;
+					}
 				}
-			}
+			.button{
+				color:#6F2DA8;
+				background-color:white;
+				border-radius: 25px;
+				width: 300px;
+				height:55px;
+				cursor: pointer;
+				border:2px solid #6F2DA8;
+				font-weight: bold;
+				font-size:1.5em;
+				margin-bottom:10px;
+				max-width: 90%;
+				}
 		</style>
 	</head>
 	
 	<body>
 	
 		<header>
-			<img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300">
+			<a href="index.html" style="background:none; border:none; padding:0;"><img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300"></a>
 		</header>
 		
 		<nav>
@@ -121,15 +145,15 @@
 			<table class="slide">
 				<tr>
 					<td>
-						<a href="AffittoAOre.html"><img src="./immagini/RobotVendita.jpeg" alt="robot vendita 1"></a>
+						<a href="AffittoAOre.html" style="background:none; border:none; padding:0;"><img src="./immagini/RobotVendita.jpeg" alt="robot vendita 1"></a>
 					</td>
 					<td>
-						<a href="Abbonati.html"><img src="./immagini/RobotVendita2.jpg" alt="robot vendita 2"></a>
+						<a href="Abbonati.html" style="background:none; border:none; padding:0;"><img src="./immagini/RobotVendita2.jpg" alt="robot vendita 2"></a>
 					</td>
 				</tr>
 				<tr>
-					<td class="BigBlackLink"><a href="AffittoAOre.html">Affitta a ore</a></td>
-					<td class="BigBlackLink"><a href="Abbonati.html">Abbonati al servizio</a></td>
+					<td><form action="AffittoAOre.html"><input type="submit" value="Affitto a Ore" class="button"></form></td>
+					<td><form action="Abbonati.html"><input type="submit" value="Abbonati!" class="button"></form></td>
 				</tr>
 			</table>
 		</article>
@@ -137,8 +161,8 @@
 		<footer class="white">
 			Made by: Omnia Assist Corp.<br/>
 			(Barbolini Matteo, Pignatti Marco, Di Donna Gabriel, Kinaoui Imran)<br/>
-			<span class="smallLink"><a href="Contatti.html" style="color:white;">Contatti utili</a></span>
+			<span class="smallLink"><a href="Contatti.html">Contatti utili</a></span>
 			<p class="textalignright"> Copyright Omnia Assist 2026&copy;</p>
 		</footer>
-	</body>
+	</body> 
 </html>

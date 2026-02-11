@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" style="height: 100%;">
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,9 @@
 				font-family: 'Trebuchet MS', sans-serif;
 				margin:0;
 				padding:0;
+				display: flex;
+				flex-direction: column;
+				min-height: 100%;
 			}
 			header{
 				background-color:#6F2DA8;
@@ -26,20 +29,26 @@
 				background-color:#6F2DA8;
 				text-align:center;
 				padding-bottom: 10px;
+				padding-top: 10px;
 				}
-				a:link{
-					color:white;
-					}
-				a:visited{
-					color:white;
-					}
-				a:hover{
-					color:black;
+				nav a{
+					color:#6F2DA8;
+					background-color: white;
+					padding: 8px 20px;
+					border-radius: 20px;
+					border: 2px solid white;
+					font-weight: bold;
+					font-size: 1.1em;
+					text-decoration: none;
+					display: inline-block;
 				}
-				a{text-decoration:none;}
-				a:link{font-size:1.75em}
+				nav a:hover{
+					background-color: #6F2DA8;
+					color: white;
+				}
 			article{
 				background-color:white;
+				flex: 1;
 				}
 			footer{
 				background-color:#6F2DA8;
@@ -63,6 +72,7 @@
 				width: 100%;
 				height: 250px;
 				object-fit: cover;
+				border:2px solid #6F2DA8;
 				border-radius: 8px;
 			}
 			.descrizione-testo {
@@ -81,7 +91,14 @@
 			.textalignright{
 				text-align:right;
 				}
-			.smallLink{font-size:0.65em;}
+			.smallLink{font-size:1em;}
+			.smallLink a{
+				font-size: 1.25em;
+				background: none;
+				border: none;
+				color: white;
+				padding: 0;
+			}
 			.button{
 				color:#6F2DA8;
 				background-color:white;
@@ -89,7 +106,7 @@
 				width: 180px;
 				height:40px;
 				cursor: pointer;
-				border: none;
+				border:2px solid #6F2DA8;
 				font-weight: bold;
 				}
 			.txtaligncenterwhite{
@@ -112,8 +129,7 @@
 				}
 				nav a {
 					display: block;
-					font-size: 1.2em;
-					margin: 10px 0;
+					margin: 10px 20px;
 				}
 				header img {
 					width: 80%;
@@ -125,7 +141,7 @@
 	<body>
 	
 		<header>
-			<a href="LaNostraImpresa.html"><img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300"></a>
+			<a href="index.html" style="background:none; border:none; padding:0;"><img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300"></a>
 		</header>
 		
 		<nav>
@@ -173,7 +189,7 @@
 		<footer>
 			Made by: Omnia Assist Corp.<br/>
 			(Barbolini Matteo, Pignatti Marco, Di Donna Gabriel, Kinaoui Imran)<br/>
-			<span class="smallLink"><a href="Contatti.html" style="color:white">Contatti Utili</a></span>
+			<span class="smallLink"><a href="Contatti.html">Contatti Utili</a></span>
 			<p class="textalignright"> Copyright Omnia Assist 2026&copy;</p>
 		</footer>
 	</body>

@@ -20,24 +20,29 @@
 			header{
 				background-color:#6F2DA8;
 				text-align:center;
-				padding: 20px 0;
+				padding-bottom:10px;
 				}
 			nav{
 				background-color:#6F2DA8;
 				text-align:center;
 				padding-bottom: 10px;
+				padding-top: 10px;
 				}
-				a:link{
-					color:white;
-					}
-				a:visited{
-					color:white;
-					}
-				a:hover{
-					color:black;
+				nav a{
+					color:#6F2DA8;
+					background-color: white;
+					padding: 8px 20px;
+					border-radius: 20px;
+					border: 2px solid white;
+					font-weight: bold;
+					font-size: 1.1em;
+					text-decoration: none;
+					display: inline-block;
 				}
-				a{text-decoration:none;}
-				a:link{font-size:1.75em;}
+				nav a:hover{
+					background-color: #6F2DA8;
+					color: white;
+				}
 			article{
 				background-color:white;
 				padding: 20px;
@@ -53,21 +58,24 @@
 			.textalignright{
 				text-align:right;
 			}
-			.smallLink{
-				font-size:0.65em;
+			.smallLink{font-size:1em;}
+			.smallLink a{
+				font-size: 1.25em;
+				background: none;
+				border: none;
+				color: white;
+				padding: 0;
 			}
-			
-			/* Adattamento immagini */
+
 			img.responsive {
 				max-width: 100%;
 				height: auto;
 			}
 
-			@media (max-width: 768px) {
+			@media (max-width: 900px) {
 				nav a {
 					display: block;
-					font-size: 1.2em;
-					margin: 10px 0;
+					margin: 10px 20px;
 				}
 				header img {
 					width: 80%;
@@ -82,7 +90,7 @@
 	<body>
 	
 		<header>
-			<img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300">
+			<a href="index.html" style="background:none; border:none; padding:0;"><img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300"></a>
 		</header>
 		
 		<nav>
@@ -104,7 +112,7 @@
 				L'idea è partita ponendoci una domanda: <b> come possiamo aiutare persone con difficoltà motorie e persone anziane? </b> Ecco che da quella domanda ci venne una grande idea 
 				che diede inzio ad un grande progetto, chiamato <b> Omnia Assist Corp </b>.<br>
 				Come possiamo vedere dal grafico qui sotto,
-				si vede che negli ultimi 10 anni, dal 2015 al 2025, il bisogno di assistenza per anziani e persone disabili è in costante aumento, mentre il numero di OSS disponibili sta diminuendo.<br>
+				si vede che negli ultimi 10 anni, dal 2015 al 2025, il bisogno di assistenza per anziani e persone disabili è in costante aumento, mentre le numero di OSS disponibili sta diminuendo.<br>
 				Questo squilibrio rende difficile garantire assistenza continua e di qualità. Il nostro robot Sanitario nasce proprio per ristabilizzare questa carenza <br>
 				e migliorare le cure delle persone più fragili.</p>
 				
@@ -128,9 +136,8 @@
 		<footer>
 			Made by: Omnia Assist Corp.<br/>
 			(Barbolini Matteo, Pignatti Marco, Di Donna Gabriel, Kinaoui Imran) <br>
-			<span class="smallLink"><a href="Contatti.html" style="color:white;">Contatti utili </a></span>
+			<span class="smallLink"><a href="Contatti.html">Contatti utili</a></span>
 			<p class="textalignright"> Copyright Omnia Assist 2026&copy;</p>
 		</footer>
 	</body>
-
-</html>	
+</html>
