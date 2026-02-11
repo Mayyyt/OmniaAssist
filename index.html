@@ -57,7 +57,7 @@
 				}
 			
 			.slide{
-				padding: 20px;
+				padding:10px;
 				background-color:#A5D9Fd;
 				text-align:center;
 				width: 100%;
@@ -81,7 +81,7 @@
 				align-items: center;
 				justify-content: center;
 				margin: 10px 0;
-				font-size: 0.95em;
+				font-size: 1.25em;
 			}
 			.lightgray{
 				color:#9C9C9C;
@@ -94,6 +94,7 @@
 			.smallLink{font-size:1em;}
 			.smallLink a{
 				font-size: 1.25em;
+				text-decoration: none;
 				background: none;
 				border: none;
 				color: white;
@@ -112,6 +113,7 @@
 			.txtaligncenterwhite{
 				text-align:center;
 				color:#6F2DA8;
+			    font-size:2.5em;
 				}
 
 			@media (max-width: 900px) {
@@ -135,11 +137,20 @@
 					width: 80%;
 				}
 			}
+			.darkgray{
+				color:#4f4f4f;
+				}
+			.titolo{
+				font-size:3em;
+				text-align:center;
+				-webkit-text-fill-color: #A5D9Fd;
+				-webkit-text-stroke: 2px #6F2DA8;
+				}
 		</style>
 	</head>
 	
 	<body>
-	
+		
 		<header>
 			<a href="index.html" style="background:none; border:none; padding:0;"><img src="./immagini/LogoOmniaAssist_Senza_Sfondo.png" alt="logo" width="300"></a>
 		</header>
@@ -147,40 +158,45 @@
 		<nav>
 			<a href="index.html">Home</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="LaNostraImpresa.html">Su di Noi</a>
+			<a href="LaNostraImpresa.html">Chi Siamo</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="Omnia-Hub-NP++.html">I Nostri Spot</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="Prenota.html">Prenota Ora!</a>
+			<a href="Prenota.html">Prenota!</a>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="Contatti.html">Il Nostro Team</a>
+			<a href="Contatti.html">Team</a>
 		</nav>
 			
 		<article>
-			<h1 class="txtaligncenterwhite">UNA NUOVA FRONTIERA DELL'ASSISTENZA!</h1>
-			<h2 class="lightgray">I nostri robot per l’assistenza alla persona garantiscono un supporto continuativo e autonomo nelle attività quotidiane, offrendo un aiuto concreto a persone con disabilità o ridotta autonomia. Progettati per svolgere in modo affidabile molte delle mansioni tipiche dell’assistenza di base, migliorando la qualità della vita dell’assistito.</h2>
+
+			<h1 class="titolo">OLTRE L'UMANO, PER IL BENE DELL'UMANO</h1>
+			<h2 class="lightgray">Robot <span class="darkgray">intelligenti</span> per un supporto quotidiano <span class="darkgray">autonomo</span> e <span class="darkgray">affidabile</span>.
+			Miglioriamo la <span class="darkgray">qualità della vita</span> di chi ha bisogno, garantendo <span class="darkgray">assistenza costante</span>
+			e <span class="darkgray">innovazione tecnologica</span> al tuo servizio.</h2>
+			<br/>
+			<h1 class="txtaligncenterwhite">SCOPRI ORA I NOSTRI SERVIZI</h1>
 			
 			<table class="slide">
 				<tr>
 					<td>
 						<img src="./immagini/RobotSlide1.jpg" alt="robot 1">
-						<div class="descrizione-testo">I nostri robot sono il top di gamma in ambito sanitario</div>
-						<form action="LaNostraImpresa.html"><input type="submit" value="Scopri di Più!" class="button"></form>
+						<div class="descrizione-testo">Eccellenza tecnologica in ambito sanitario</div>
+						<form action="LaNostraImpresa.html"><input type="submit" value="Scopri di Più" class="button"></form>
 					</td>
 					<td>
 						<img src="./immagini/RobotSlide2.png" alt="robot 2">
-						<div class="descrizione-testo">Assistenza 24/7 sempre in ascolto per i vostri bisogni</div>
-						<form action="Contatti.html"><input type="submit" value="Il nostro Team" class="button"></form>
+						<div class="descrizione-testo">Supporto 24/7 sempre al tuo fianco</div>
+						<form action="Contatti.html"><input type="submit" value="Contattaci" class="button"></form>
 					</td>
 					<td>
 						<img src="./immagini/RobotSlide3.jpeg" alt="robot 3">
-						<div class="descrizione-testo">La vostra soddisfazione è il nostro miglior premio</div>
-						<form action="Omnia-Hub-NP++.html"><input type="submit" value="Le Recensioni" class="button"></form>
+						<div class="descrizione-testo">La vostra fiducia è la nostra forza</div>
+						<form action="Omnia-Hub-NP++.html"><input type="submit" value="Recensioni" class="button"></form>
 					</td>
 					<td>
 						<img src="./immagini/RobotSlide4.jpeg" alt="robot 4">
-						<div class="descrizione-testo">Prenota ora il nostro servizio innovativo</div>
-						<form action="Prenota.html"><input type="submit" value="Prenota Ora!" class="button"></form>
+						<div class="descrizione-testo">Rivoluziona il tuo quotidiano oggi</div>
+						<form action="Prenota.html"><input type="submit" value="Prenota Ora" class="button"></form>
 					</td>
 				</tr>
 			</table>
@@ -188,8 +204,8 @@
 		</article>
 		<footer>
 			Made by: Omnia Assist Corp.<br/>
-			(Barbolini Matteo, Pignatti Marco, Di Donna Gabriel, Kinaoui Imran)<br/>
-			<span class="smallLink"><a href="Contatti.html">Contatti Utili</a></span>
+			(Barbolini, Pignatti, Di Donna, Kinaoui)<br/><br/>
+			<span class="smallLink"><a href="Contatti.html">Contatti</a></span>
 			<p class="textalignright"> Copyright Omnia Assist 2026&copy;</p>
 		</footer>
 	</body>
